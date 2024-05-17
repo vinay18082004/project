@@ -1,0 +1,111 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+    overflow-x: hidden;
+}
+
+.bg-img {
+    position: fixed;
+    width: 100%;
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+.hero_Section {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #1315193b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: azure;
+    font-family: "Oswald", sans-serif;
+}
+
+.heading {
+    margin-top: 100px;
+    font-size: 8rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-in-out;
+}
+
+.cname:hover .name {
+-webkit-text-fill-color: white; /* Change text fill color on hover */
+}
+
+
+.tag-line {
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+}
+
+.suncont {
+    height: 460px;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #62fdd9, black 40%);
+    border-radius: 13px;
+    margin: 25px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img {
+    height: 450px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    border-radius: 13px;
+    border: 5px;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.img h2{
+    font-family: "Poppins", sans-serif;
+    color: white;
+
+}
+
+.img h3 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+
+.teamimg {
+    height: 250px;
+    width: 180px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}

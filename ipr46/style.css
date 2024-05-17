@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=FontName:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.box {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 1228px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.form-box {
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header {
+    font-size: 25px;
+    font-weight: 600px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.form-box form .field {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.form-box form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.btn {
+    height: 40px;
+    background-color: #ffcc00;
+    border: 2px solid white;
+    width: 100px;
+    outline: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.1em;
+    cursor:pointer;
+    transition: all .3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    opacity: 0.82;
+}
+
+
+.submit {
+    width: 100%;
+}
+
+.link {
+    margin-bottom: 15px;
+}
+
+/************************Home*****************************/
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 30px;
+    height: 100px;
+    padding: 0px;
+    background: #0d0101;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 100px;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    box-shadow: #ffcc00;
+}
+
+.logo {
+    display: flex;
+    font-size: 10px;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 0 20px; 
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:whitesmoke;
+
+}
+
+.logo img {
+    width: 150px;
+    height: 80px; 
+    border-radius: 10px; 
+    margin-right:3px;
+    
+    margin-top:0.5cm;
+    cursor: pointer;
+}
+
+.logo h1 {
+    font-size:40px;
+    margin-left: 15px; 
+}
+
+.menu-icon{
+    width:35px;
+    cursor:pointer;
+    margin:0px 10px 0px 15px;
+   margin-right:10px;
+}
+.right-links {    
+    justify-content: center;
+    width: auto;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.right-links a {
+    padding: 0 10px;
+}
+
+.btn a {
+    text-decoration: none; 
+}
+
+/* menu part */
+navv {
+    display: flex;
+    gap:5px;
+}
+
+navv a {
+    text-decoration: none;
+    color: ivory;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    padding: 0px;
+    position: relative;
+    line-height: 1.6;
+    margin-left: 10px;
+    
+}   
+
+ navv a::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgba(28, 186, 36, 0.697);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.4s;
+} 
+
+navv a:hover {
+    color: #ffcc00;
+}
+navv a:hover::after {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    navv {
+        align-items: left;
+        position: absolute;
+        top:100px;
+        background:#ffcc00;
+        left: 100px;
+        flex-direction: column;
+        width: 50%;
+        
+        align-items: center;
+        height: 100vh;
+
+    }
+    .logo img {
+        width: 100px;
+        height: auto; 
+        border-radius: 10px; 
+        margin-right: 3px;
+        margin-top:0.3cm;
+        cursor: pointer;
+    }
+    navv a {
+        margin: 10px 0; /* Add margin for spacing between links */
+    }
+
+   
+}
+.btn a { 
+    text-decoration: none; 
+}
+
+/***********register*******************/
+.message {
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border: 1px solid #699069;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+/************* main screan after the logo  ******************************/
+.section-content {
+    height: calc(100vh - 100px);
+    position:relative;
+    top: 150px; 
+    overflow:auto;
+}
+
+
+.main-content {
+    color: #fff;
+    padding-top: 220px;
+    padding-bottom: 200px;
+    text-align: center;
+    background:lightgreen;
+}
+
+.main-content h1 {
+    font-size: 75px;
+    font-family: "Kaushan Script", cursive;
+}
+
+.main-content p {
+    font-size :20px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+/* **************services***************** */
+.main-content2{
+    background-color:hsl(60, 9%, 55%);
+    text-align: right;
+    padding-top: 20px;
+}
+.cont {
+    background: #699069;
+    display:flex; 
+    width: 150px ;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+    min-width:30%;
+    gap:25px;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+.bn{
+    position: relative;
+    background-color: #fff;
+    color:#000;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s; 
+}
+.bn:hover{
+    background: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+
+
+
+
+.main-content1{
+    background-color: pink;
+    align-items: center;
+}
+
+
+
+#contact{
+    background-color: brown;
+   color: aqua;
+
+}
